@@ -1,0 +1,192 @@
+/*
+Template Name: Mon theme
+Author: Jonathan Fauchoux
+Version: 0.0.1
+Licence: GNU General Public Licence v2 or later
+Requires at least: 5.2
+Description: Mon theme test / licence GPL
+Tags: Bulma,animateCss
+*/
+
+
+/*HEADER*/
+html{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.hero-body{
+    display: flex !important;
+    align-items: center;
+    justify-content: flex-start;
+    height: 15rem;
+}
+.title-grp{
+    padding-left: 3rem;
+}
+.slogan{
+    color: #FFDD57 !important;
+}
+
+
+/*NAV*/
+
+nav li ul{
+    display: none;
+}
+nav li:hover ul{
+    display: block;
+}
+
+.navbar-brand{
+    margin: 0 !important;
+    display: flex;
+    align-items: center !important;
+}
+li{
+    list-style: none !important;
+    margin: 0;
+}
+.navbar-item{
+    /* border: white 1px solid; */
+    height: 3rem;
+    margin:0 !important;
+}
+
+/* MAIN*/
+.hidden{
+    display: none;
+}
+.contenu {
+    display:flex;
+    justify-content: center;
+}
+main {
+    min-width: 80%;
+}
+.control{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.checkbox {
+    margin-right: 5px !important;
+    position: relative;
+    top: 2px;
+}
+.title-form{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.left-form{
+    display: flex;
+    flex-direction: column;
+    height:auto;
+    padding-right: 1rem;
+}
+.control-log{
+padding-top: 1rem !important;
+}
+
+.activite{
+    display: flex;
+    justify-content: space-evenly;
+}
+.card{
+    border-radius: 1rem;
+}
+.card-image{
+    padding-top: 2rem !important;
+}
+.content-form{
+    display: flex;
+    justify-content: space-between;
+}
+.video {
+    width: 100%;
+    height: 300px;
+   
+}
+.canvas{
+    
+    margin-top: -295px;
+    left:0;
+    width: 100%;
+    height: 290px;
+}
+.snap{
+        margin-top: 1rem;
+}
+.form{
+    width: 60%;
+}
+.output-grp{
+    display: flex;
+   
+}
+#qrcode{
+    width: 50%;
+}
+.output{
+    padding: 0 .5rem ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2rem;
+}
+#the-image{
+    height: 60%;
+    width: 52%;
+    object-fit: fill;
+}
+.output-choix{
+    margin:0 !important;
+}
+
+/* FOOTER */
+footer{
+    
+    background-color: #363636;
+    color:white;
+    width: 100%;
+    height: auto;
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.footer-sidebar{
+    display: flex;
+    justify-content: space-around;
+    
+}
+.basdepage{
+    display: flex;
+    align-items: center;
+}
+.bottom > a{
+    color: #FFDD57 !important;
+}
+.basdepage>p{
+    margin: 0 !important;
+    padding-top: 1rem;
+}
+
+
+@media print {
+    footer{
+        display: none !important;
+    }
+    .hero{
+        visibility: hidden !important;
+    }
+    .section{
+        border: dashed 2px black !important;
+    }
+    .imprim{
+        display: none !important;
+    }
+}
